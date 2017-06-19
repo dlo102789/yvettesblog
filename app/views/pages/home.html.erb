@@ -7,7 +7,16 @@
 
 <section class="module content">
 	<div class="container">
-		<h2>Post Content</h2>
-		<p>Parallax is an effect where the position of an object seems to be different when viewed from different positions. Parallax motion, or in our case, parallax scrolling, then gives us the illusion that two objects in the same line of sight, but with distance between them, seem to move at different speeds. If you've ever looked out a car window while driving at 100 km per hour down a highway, you'll notice that the electricity poles seem to zip by at a high pace, while the mountains in the background seem to move by really slowly, almost at a standstill. This is parallax motion in action.</p>
+		<h2 id="posts" class="text-center"><strong><u>Posts</u></strong></h2>
+		<% @pages.last do |t| %>
+			<div class="well-lg">
+				<h3 class="article-title text-center"><%= t.title %></h3>
+				<p class="article-text"><%= t.body %></p>		
+				<ul class="list-inline">
+					<li><%= link_to "Delete", page_path(t), method: :delete, data: {confirm: "Really delete the article?"} %></li>
+					<li><%= link_to "Edit", edit_page_path(t) %></li>
+				</ul>
+			</div>	
+		<% end %>
 	</div>
 </section>
