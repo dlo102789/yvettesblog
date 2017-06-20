@@ -54,7 +54,7 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("/assets/wood-nature-sunny-forest.jpg");
+  background-image: asset_url("/wood-nature-sunny-forest.jpg");
   transform:translateZ(-100);
 }
 @media all and (min-width: 600px) {
