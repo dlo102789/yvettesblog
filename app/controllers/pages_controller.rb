@@ -13,10 +13,6 @@ class PagesController < ApplicationController
 	def create
 		@page = Page.new(page_params)
 		if @page.save
-			name = params[:contact][:name]
-			email = params[:contact][:email]
-			body = params[:contact][:comments]
-			ContactMailer.contact_email(name, email, body).deliver
 			flash[:success] = "Post Created!"
 			redirect_to page_path(@page)
 		else

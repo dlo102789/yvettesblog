@@ -7,16 +7,29 @@
 
 <section class="module content">
 	<div class="container">
-		<h2 id="posts" class="text-center"><strong><u>Posts</u></strong></h2>
-		<% @pages.last do |t| %>
-			<div class="well-lg">
-				<h3 class="article-title text-center"><%= t.title %></h3>
-				<p class="article-text"><%= t.body %></p>		
-				<ul class="list-inline">
-					<li><%= link_to "Delete", page_path(t), method: :delete, data: {confirm: "Really delete the article?"} %></li>
-					<li><%= link_to "Edit", edit_page_path(t) %></li>
-				</ul>
-			</div>	
-		<% end %>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="well-lg">
+					<h3 class="article-title text-center"><%= @pages.last.title %></h3>
+					<p class="article-text"><%= @pages.last.body %></p>		
+					<ul class="list-inline">
+						<li><%= link_to "Delete", page_path(@pages.last), method: :delete, data: {confirm: "Really delete the article?"} %></li>
+						<li><%= link_to "Edit", edit_page_path(@pages.last) %></li>
+					</ul>
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="well">
+					<h3 class="text-center">Recent Posts</h1>
+					<ul>
+						<% @pages.each do |t| %>
+							<li>
+							<%= link_to t.title, page_path(t), class: 'page_title', id: "page_#{t.id}" %>
+							</li>
+						<% end %>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
