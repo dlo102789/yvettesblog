@@ -9,14 +9,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				<div class="well-lg">
-					<h3 class="article-title text-center"><%= @pages.last.title %></h3>
-					<p class="article-text"><%= @pages.last.body %></p>		
-					<ul class="list-inline">
-						<li><%= link_to "Delete", page_path(@pages.last), method: :delete, data: {confirm: "Really delete the article?"} %></li>
-						<li><%= link_to "Edit", edit_page_path(@pages.last) %></li>
-					</ul>
-				</div>	
+				<% @pages.reverse_each do |t| %>
+					<div class="well-lg">
+						<h3 class="article-title text-center"><%= t.title %></h3>
+						<p class="article-text"><%= t.body %></p>		
+						<ul class="list-inline">
+							<li><%= link_to "Delete", page_path(t), method: :delete, data: {confirm: "Really delete the article?"} %></li>
+							<li><%= link_to "Edit", edit_page_path(t) %></li>
+						</ul>
+					</div>	
+				<% end %>
 			</div>
 			<div class="col-md-4">
 				<div class="well">
