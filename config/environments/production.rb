@@ -96,7 +96,7 @@ Rails.application.configure do
   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
   :domain         => 'derekandyvette.herokuapp.com',
   :authentication => :plain,
-}
-ActionMailer::Base.delivery_method = :smtp
+  }
+  ActionMailer::Base.delivery_method = :smtp
 
 end
