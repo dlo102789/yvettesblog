@@ -8,7 +8,8 @@
 
 .container {
 
-	font-family: 'Fredoka One', cursive;
+	//font-family: 'Fredoka One', cursive;
+  font-family: 'Bubbler One', sans-serif;
 
 	max-width: 960px;
 	margin: 0 auto;
@@ -21,7 +22,6 @@
 
 section.module h2 {
   margin-bottom: 40px;
-  font-family: "Lato", serif;
   font-size: 30px;
 }
 
@@ -45,12 +45,14 @@ section.module.parallax {
   background-size: cover;
 }
 section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
+  //font-family: "Lato", serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 40px;
   line-height: 120px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {

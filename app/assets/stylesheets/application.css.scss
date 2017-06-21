@@ -19,10 +19,16 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+html {
+	font-family: 'Bubbler One', sans-serif;
+}
+
 body {
 	//background: #DAD299;  /* fallback for old browsers */
 	//background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
 	//background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Bubbler One', sans-serif;
+
 }
 
 .navbar {
