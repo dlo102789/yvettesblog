@@ -1,0 +1,22 @@
+<%= simple_form_for @page do |f| %>
+	
+	<ul>
+	<% @page.errors.full_messages.each do |error| %>
+		<li><%= error %></li>
+	<% end %>
+  	</ul>
+
+	<div class="form-group">
+		<%= f.input :title, class: 'form-control' %>
+	</div>
+
+	<div class="form-group">
+		<%= f.input :body,:as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'Pure', :customConfig => asset_path('ckeditor/config.js')}}, class: "form-control" %>		
+	</div>
+
+	<div class="form-group">
+		<%= f.button :submit, class: 'btn btn-default' %>
+	</div>
+	
+
+<% end %>

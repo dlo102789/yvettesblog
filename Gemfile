@@ -34,6 +34,12 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 #Use Devise for user authentication
 gem 'devise', '4.2.0'
+#Use Paperclip for uploading images/files to blog
+gem 'paperclip'
+#Use CKEditor to bring word processing features to blog post creation
+gem 'ckeditor'
+#Use SimpleForm to assist ckeditor
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

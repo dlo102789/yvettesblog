@@ -24,9 +24,9 @@ html {
 }
 
 body {
-	//background: #DAD299;  /* fallback for old browsers */
-	//background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
-	//background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #649173;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: 'Bubbler One', sans-serif;
 
 }
@@ -36,29 +36,35 @@ body {
 }
 
 .navbar-custom {
-	background: #FFEEEE;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #E2E2E2;  /* fallback for old browsers */
+	//background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+	//background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a.navbar-brand {
-	color: #707070;
+	//color: #707070;
+	//&:hover,
+	//&:focus {
+	//	color: #606060;
+	//}
+	color: #515151;
 	&:hover,
 	&:focus {
-		color: #606060;
+		color: #686868;
 	}
 }
 
 .navbar-nav > li > a {
-	color: #707070;
+	color: #515151;
 	&:hover,
 	&:focus {
-		color: #606060;
+		color: #686868;
 	}
 }
 
 .well {
-	background-color: #DDEFBB;
+	//background-color: #DDEFBB;
 	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 2px;
 }
+

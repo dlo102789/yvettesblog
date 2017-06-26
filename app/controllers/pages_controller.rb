@@ -36,6 +36,17 @@ class PagesController < ApplicationController
 		@page = Page.find(params[:id])
 	end
 
+	def update
+		@page = Page.find(params[:id])
+		if @page.update(page_params)
+			flash[:success] = "Post Updated"
+			redirect_to page_path(@page)
+		else
+			flash[:danger] = "Error Occurred"
+			redirect_to page_path(@page)
+		end
+	end
+
 	private
 	def page_params
 		params.require(:page).permit(:title, :body)
