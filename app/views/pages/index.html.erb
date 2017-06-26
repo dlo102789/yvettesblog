@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <br/><br/>
+      <div class="well-lg">
+        <h1 class="text-center">Our Dashboard!</h1>
+        <h4 class="text-center">Edit and create posts here</h4>
+        <div class="create-button text-center">
+          <%= link_to "Create New Post", new_page_path, class: "btn btn-success btn-lg text-center" %><br/><br/><br/>
+        </div>
+        <ul class="articles">
+          <% @pages.reverse_each do |t| %>
+            <li>
+              <%= link_to t.title, page_path(t), class: 'post_title', id: "post_#{t.id}" %>
+              <div class="admin_buttons pull-right">
+                <%= link_to 'Edit', edit_page_path(t), class: 'btn btn-warning' %>
+                <%= link_to 'Delete', page_path(t), class: 'btn btn-danger', method: :delete, data: {confirm: "Really delete the article?"} %>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

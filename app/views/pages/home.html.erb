@@ -15,8 +15,10 @@
 						<p><e>Written on <%= t.created_at.strftime("%B %e, %Y") %></e></p><br/>
 						<p class="article-text"><%= raw(t.body) %></p>		
 						<ul class="list-inline">
-							<li><%= link_to "Delete", page_path(t), method: :delete, data: {confirm: "Really delete the article?"} %></li>
-							<li><%= link_to "Edit", edit_page_path(t) %></li>
+              <% if user_signed_in? %>
+                <li><%= link_to "Delete", page_path(t), method: :delete, data: {confirm: "Really delete the article?"} %></li>
+							  <li><%= link_to "Edit", edit_page_path(t) %></li>
+              <% end %>
 						</ul>
 					</div>	
 				<% end %>

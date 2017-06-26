@@ -1,14 +1,16 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-8 col-md-offset-2"><br/><br/>
 			<div class="well-lg">
 				<h2><strong><%= @page.title %></strong></h2>
-				<p><e>Written on <%= @page.created_at.strftime("%B %e, %Y") %></e></p><br/>
+				<p><em>Written on <%= @page.created_at.strftime("%B %e, %Y") %></em></p><br/>
 				<p><%= raw(@page.body) %></p>
-				<%= link_to "Delete", page_path(@page), method: :delete, data: {confirm: "Really delete the article?"} %>
-				<%= link_to "Edit", edit_page_path(@page) %></br>
-				<%= link_to "<< Back to Home", root_path %>
-			</div>
+				<% if user_signed_in? %>
+          <%= link_to 'Delete', page_path(@page), method: :delete, data: {confirm: "Really delete the article?"} %>
+				  <%= link_to 'Edit', edit_page_path(@page) %><br/>
+        <% end %>
+				<%= link_to '<< Back to Home', root_path %>
+
 		</div>
 	</div>
 </div>

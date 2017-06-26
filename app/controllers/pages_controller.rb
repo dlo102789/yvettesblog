@@ -1,5 +1,12 @@
 class PagesController < ApplicationController
+
+	before_filter :authenticate_user!, :except => [:show, :home, :about]
+
 	def home
+		@pages = Page.all
+	end
+
+	def index
 		@pages = Page.all
 	end
 
