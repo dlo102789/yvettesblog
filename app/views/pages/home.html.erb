@@ -12,7 +12,7 @@
 				<% @pages.reverse_each do |t| %>
 					<div class="well-lg">
 						<h3 class="article-title text-center"><%= t.title %></h3>
-						<p><e>Written on <%= t.created_at.strftime("%B %e, %Y") %></e></p><br/>
+						<p><em>Written on <%= t.created_at.strftime("%B %e, %Y") %></em></p><br/>
 						<p class="article-text"><%= raw(t.body) %></p>		
 						<ul class="list-inline">
               <% if user_signed_in? %>
@@ -25,7 +25,7 @@
 			</div>
 			<div class="col-md-4 col-xs-12">
 				<div class="well">
-					<h3 class="text-center">Recent Posts</h1>
+					<h2 class="text-center">Recent Posts</h2>
 					<ul>
 						<% @pages.each do |t| %>
 							<li>
