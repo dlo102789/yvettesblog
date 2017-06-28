@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-xs-12">
-				<% @pages.reverse_each do |t| %>
+				<% @pages.last(3).each do |t| %>
 					<div class="well-lg">
 						<h3 class="article-title text-center"><%= t.title %></h3>
 						<p><em>Written on <%= t.created_at.strftime("%B %e, %Y") %></em></p><br/>
@@ -19,6 +19,7 @@
                 <li><%= link_to "Delete", page_path(t), method: :delete, data: {confirm: "Really delete the article?"} %></li>
 							  <li><%= link_to "Edit", edit_page_path(t) %></li>
               <% end %>
+                <li><%= link_to 'See Comments', page_path(t, anchor: 'comments') %></li>
 						</ul>
 					</div>	
 				<% end %>
@@ -27,7 +28,7 @@
 				<div class="well">
 					<h2 class="text-center">Recent Posts</h2>
 					<ul>
-						<% @pages.each do |t| %>
+						<% @pages.reverse_each do |t| %>
 							<li>
 							<%= link_to t.title, page_path(t), class: 'page_title', id: "page_#{t.id}" %>
 							</li>

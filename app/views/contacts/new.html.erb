@@ -1,29 +1,30 @@
 <div class="container">
 	<div class="row">
     <div class="text-center">
-      <iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdOl6ErLo0boe_mSZHcdy-xjVnp7zZwY384SKmmqcpMiQROBA/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-      <!--<div class="col-md-6 col-md-offset-3">
-			<div class="well">
-				<h2 class="text-center">Contact Us</h2>
-				<%# form_for @contact do |f| %>
-				<div class="form-group">
-					<%# f.label :name %>
-					<%# f.text_field :name, class: 'form-control' %>
-				</div>
+      <!--<iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdOl6ErLo0boe_mSZHcdy-xjVnp7zZwY384SKmmqcpMiQROBA/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well">
+          <h2 class="text-center">Your Message To Us</h2><br/>
+          <%= form_for @contact do |f| %>
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
 
-				<div class="form-group">
-					<%# f.label :email %>
-					<%# f.text_field :email, class: 'form-control' %>
-				</div>
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
 
-				<div class="form-group">
-					<%# f.label :comments %>
-					<%# f.text_area :comments, class: 'form-control' %>
-				</div>
+          <div class="form-group">
+            <%= f.label :comments %>
+            <%= f.text_area :comments, class: 'form-control' %>
+          </div>
 
-				<%# f.submit 'Submit', class: 'btn btn-default' %>
-				<%# end %>-
-			</div>-->
+          <%= f.submit 'Submit', class: 'btn btn-default' %>
+          <% end %>-
+        </div>
+      </div>
 		</div>
 	</div>
 </div>
