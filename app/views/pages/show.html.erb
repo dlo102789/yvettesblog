@@ -10,8 +10,13 @@
 				  <%= link_to 'Edit', edit_page_path(@page) %><br/>
         <% end %>
 				<%= link_to '<< Back to Home', root_path %><br/>
-        <h2 class="text-center" id="comments">Comments</h2>
-        <%= render @page.comments %>
+        <% if @page.comments? %>
+          <h2 class="text-center" id="comments">Comments</h2>
+          <%= render @page.comments %>
+        <% else %>
+          <h2 class="text-center" id="comments">Comments</h2><br/>
+          <h4>- It sure is empty in here... -</h4>
+        <% end %>
         <%= render partial: 'comments/form' %>
       </div>
 		</div>
