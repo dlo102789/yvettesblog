@@ -86,6 +86,4 @@ Rails.application.configure do
 
   config.cache_classes = true
 
-  rake assets:precompile
-
 end
