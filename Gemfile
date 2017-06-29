@@ -37,7 +37,7 @@ gem 'devise', '4.2.0'
 #Use Paperclip for uploading images/files to blog
 gem 'paperclip'
 #Use CKEditor to bring word processing features to blog post creation
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
 #Use SimpleForm to assist ckeditor
 gem 'simple_form'
 
