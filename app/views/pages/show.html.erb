@@ -17,7 +17,7 @@
           <h2 class="text-center" id="comments">Comments</h2>
           <h4 class="text-center">- It sure is empty in here... -</h4><br/>
         <% end %>
-        <%= render partial: 'comments/form' %>
+        <%= render partial: 'comments/form', page_id: @page.id %>
       </div>
 		</div>
 	</div>
