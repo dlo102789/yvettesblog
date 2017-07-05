@@ -8,11 +8,11 @@
 
 .container {
 
-	//font-family: 'Fredoka One', cursive;
+  //font-family: 'Fredoka One', cursive;
   font-family: 'Bubbler One', sans-serif;
 
-	max-width: 960px;
-	margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 
 }
 
@@ -20,31 +20,31 @@
   SECTIONS
 ============================================================ */
 
-section.module h2 {
+div.module h2 {
   margin-bottom: 40px;
   font-size: 30px;
 }
 
-section.module p {
+div.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
 }
-section.module p:last-child {
+div.module p:last-child {
   margin-bottom: 0;
 }
 
-section.module.content {
+div.module.content {
   padding: 40px 0;
 }
-section.module.parallax {
+div.module.parallax {
   height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-section.module.parallax h1 {
+div.module.parallax h1 {
   color: rgba(255, 255, 255, 0.7);
   //font-family: "Lato", serif;
   font-family: 'Dancing Script', cursive;
@@ -55,23 +55,23 @@ section.module.parallax h1 {
   //text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-section.module.parallax-1 {
-  background-image: url("/assets/wood-nature-sunny-forest.jpg");
+div.module.parallax-1 {
+  background-image: asset-data-url("wood-nature-sunny-forest.jpg");
   transform:translateZ(-100);
 }
 @media all and (min-width: 600px) {
-  section.module h2 {
+  div.module h2 {
     font-size: 42px;
   }
-  section.module p {
+  div.module p {
     font-size: 20px;
   }
-  section.module.parallax h1 {
+  div.module.parallax h1 {
     font-size: 80px;
   }
 }
 @media all and (min-width: 960px) {
-  section.module.parallax h1 {
+  div.module.parallax h1 {
     font-size: 140px;
   }
 }
@@ -83,3 +83,4 @@ section.module.parallax-1 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+

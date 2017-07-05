@@ -108,6 +108,7 @@ GEM
     mimemagic (0.3.2)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
+    modernizr-rails (2.7.1)
     multi_json (1.12.1)
     nio4r (2.0.0)
     nokogiri (1.7.1)
@@ -165,6 +166,8 @@ GEM
     simple_form (3.5.0)
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
+    skrollr-rails (0.6.29)
+      rails (>= 3.1.0)
     spring (2.0.1)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -213,12 +216,14 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   listen (~> 3.0.5)
+  modernizr-rails
   paperclip
   pg
   puma (~> 3.0)
   rails (~> 5.0.1)
   sass-rails (~> 5.0)
   simple_form
+  skrollr-rails
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

@@ -40,6 +40,11 @@ gem 'paperclip'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 #Use SimpleForm to assist ckeditor
 gem 'simple_form'
+#Use Skrollr for parallax effects in About page
+gem 'skrollr-rails'
+#Use modernizr for browser feature detection tests
+gem 'modernizr-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

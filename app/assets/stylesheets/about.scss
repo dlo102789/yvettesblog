@@ -1,0 +1,112 @@
+.para {
+    perspective: 300px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.para-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#para-group-1 {
+    z-index: 5;
+}
+
+#para-group-2 {
+    z-index: 3;
+}
+
+#para-group-3 {
+    z-index: 4;
+}
+
+.para-layer-base {
+    z-index: 4;
+    transform: translateZ(0);
+}
+
+
+.para-layer-back {
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+}
+
+.para-layer-fore {
+    transform: translateZ(90px) scale(0.7);
+    z-index: 1;
+}
+
+.para-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.group-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    //height: 30%;
+    //width: 50%;
+    //margin: -15% 0 0 -25%;
+    background-color: rgba(86, 86, 86,0.5);
+    color: white;
+    vertical-align: middle;
+    padding: 50px;
+}
+
+
+.text-box {
+    display: inline-block;
+    line-height: 1.3em;
+    vertical-align:middle;
+}
+
+
+h1 {
+    color: white;
+    text-size: 50px;
+}
+
+h4 {
+    color: white;
+    font-size: 25px;
+}
+
+#image-1 {
+    background-image: asset-data-url('slide-4-parallax.jpg');
+}
+#bgcBlack {
+    background-color: black;
+}
+#image-2 {
+    background-image: asset-data-url('actual-slide-3-parallax.jpeg');
+    background-size: cover;
+}
+#curtainEffect {
+    background-color: black;
+    opacity: 0.5;
+}
+#image-3 {
+    background-image: asset-data-url('slide-5-parallax.JPG');
+    background-size:cover;
+}
