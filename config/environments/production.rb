@@ -87,6 +87,9 @@ Rails.application.configure do
   config.cache_classes = true
 
   # config/environments/production.rb
+  require 'aws-sdk-v1'
+  require 'aws-sdk'
+
   config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
