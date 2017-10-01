@@ -1,3 +1,5 @@
+require 'aws-sdk'
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -87,8 +89,6 @@ Rails.application.configure do
   config.cache_classes = true
 
   # config/environments/production.rb
-  require 'aws-sdk-v1'
-  require 'aws-sdk'
 
   config.paperclip_defaults = {
     storage: :s3,

@@ -37,8 +37,7 @@ gem 'devise', '4.2.0'
 #Use Paperclip for uploading images/files to blog
 gem 'paperclip'
 #Use AWS-S3 to allow paperclip to upload files to amazon
-gem 'aws-sdk','~> 2'
-gem 'aws-sdk-v1'
+gem 'aws-sdk'
 #Use CKEditor to bring word processing features to blog post creation
 gem 'ckeditor'
 #Use SimpleForm to assist ckeditor
