@@ -36,8 +36,10 @@ gem 'font-awesome-sass'
 gem 'devise', '4.2.0'
 #Use Paperclip for uploading images/files to blog
 gem 'paperclip'
+#Use AWS-S3 to allow paperclip to upload files to amazon
+gem 'aws-sdk'
 #Use CKEditor to bring word processing features to blog post creation
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor'
 #Use SimpleForm to assist ckeditor
 gem 'simple_form'
 #Use Skrollr for parallax effects in About page
