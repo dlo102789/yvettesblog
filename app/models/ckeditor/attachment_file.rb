@@ -1,7 +1,7 @@
 class Ckeditor::AttachmentFile < Ckeditor::Asset
-  has_attached_file :data,
-                    url: '/ckeditor_assets/attachments/:id/:filename',
-                    path: ':rails_root/public/ckeditor_assets/attachments/:id/:filename'
+  has_attached_file :data, :styles => { :content => '575>', :thumb => '80x80#' },
+                    :storage => :s3, :s3_credentials => "#{Rails.root}/config/s3.yml", :path => "/editor/:style/:filename.:extension",
+                    :url => ":s3_domain_url"
 
   validates_attachment_presence :data
   validates_attachment_size :data, less_than: 100.megabytes
@@ -11,7 +11,4 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
     @url_thumb ||= Ckeditor::Utils.filethumb(filename)
   end
   
-  def store_dir
-  	"public/system/ckeditor_assets/attachments/#{model.id}"
-  end
 end
