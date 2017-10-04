@@ -9,10 +9,13 @@
 .container {
 
   //font-family: 'Fredoka One', cursive;
-  font-family: 'Bubbler One', sans-serif;
-
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: lighter;
   max-width: 960px;
   margin: 0 auto;
+  p {
+    font-size: 18px;
+  }
 }
 
 
@@ -27,8 +30,8 @@ div.module h2 {
 
 div.module p {
   margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: lighter;
 }
 div.module p:last-child {
   margin-bottom: 0;
@@ -61,10 +64,10 @@ div.module.parallax-1 {
 }
 @media all and (min-width: 600px) {
   div.module h2 {
-    font-size: 42px;
+    font-size: 30px;
   }
   div.module p {
-    font-size: 20px;
+    font-size: 18px;
   }
   div.module.parallax h1 {
     font-size: 80px;
@@ -84,3 +87,6 @@ div.module.parallax-1 {
   margin-bottom: 15px;
 }
 
+.page_title {
+  font-size: 18px;
+}

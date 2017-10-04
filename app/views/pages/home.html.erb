@@ -8,10 +8,10 @@
 <div class="module content">
 	<div class="container-fluid" style="padding: 0 4%">
 		<div class="row">
-			<div class="col-md-8 col-xs-12 col-lg-7">
+			<div class="col-md-8 col-xs-12 col-lg-8">
 				<% @pages.last(3).reverse_each do |t| %>
 					<div class="well-lg">
-						<h3 class="article-title text-center"><%= t.title %></h3>
+						<h2 class="article-title text-center"><%= t.title %></h2>
 						<p><em>Written on <%= t.created_at.strftime("%B %e, %Y") %></em></p>
 						<p class="article-text"><%= raw(t.body) %></p>		
 						<ul class="list-inline">
@@ -24,7 +24,7 @@
 					</div>	
 				<% end %>
 			</div>
-			<div class="col-md-4 col-xs-12 col-lg-3 col-lg-offset-2">
+			<div class="col-md-4 col-xs-12 col-lg-3 col-lg-offset-1">
 				<div class="well-lg" style="padding: 4% 12%">
 					<h2 class="text-center">Recent Posts</h2>
 					<ul>
