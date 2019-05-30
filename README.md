@@ -1,3 +1,13 @@
-This is a private blog for Yvette and I to document our travels.
+# This is a private blog, built on Ruby on Rails is for Yvette and I to document our travels.
 
-We will be showcasing everything we've collected on our journey together.
+* Technologies used:
+  * Ruby on Rails
+  * Bootstrap
+  * Sass
+  * JQuery
+  * SQLite
+  * Heroku
+  * AWS - S3 (Previously)
+  * Paperclip for AWS (Previously)
+  
+Written by Derek Lo
