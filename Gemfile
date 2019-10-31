@@ -33,7 +33,7 @@ gem 'bootstrap-sass'
 #Use Font Awesome for icons
 gem 'font-awesome-sass'
 #Use Devise for user authentication
-gem 'devise', '4.2.0'
+gem 'devise', '4.7.1'
 #Use Paperclip for uploading images/files to blog
 gem 'paperclip'
 #Use AWS-S3 to allow paperclip to upload files to amazon
